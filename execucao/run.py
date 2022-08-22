@@ -2,6 +2,20 @@ from loader.loadRun import *
 from aviso.avisoGameOver import gameOver
 import time
 
+def desenhar_tela(tela, passaros, canos, chao, pontos):
+    tela.blit(IMAGEM_BACKGROUND, (0, 0))
+
+    for passaro in passaros:
+        passaro.desenhar(tela)
+    for cano in canos:
+        cano.desenhar(tela)
+
+    texto = FONTE_PONTOS.render(f"Pontuação: {pontos}", 1, (255, 255, 255))
+    tela.blit(texto, (TELA_LARGURA - 10 - texto.get_width(), 10))
+    
+    chao.desenhar(tela)
+    pygame.display.update()
+    
 def mainRun():
     passaros = [Passaro(230, 350)]
     chao = Chao(730)
@@ -52,9 +66,6 @@ def mainRun():
             canos.append(Cano(600))
         for cano in remover_canos:
             canos.remove(cano)
-        
-        if pontos % 50 == 0:
-            pass
 
         for i, passaro in enumerate(passaros):
             if (passaro.y + passaro.imagem.get_height()) > chao.y or passaro.y < 0:

@@ -26,23 +26,11 @@ else:
 SONS = {
     'pulo': 'songs/pulo'+extensao,
     'morte': 'songs/morte'+extensao,
-    'batida': 'songs/batida'+extensao
+    'batida': 'songs/batida'+extensao,
 }
 
 pygame.font.init()
 FONTE_PONTOS = pygame.font.SysFont('arial', 35)
-
-def desenhar_tela(tela, passaros, canos, chao, pontos):
-    tela.blit(IMAGEM_BACKGROUND, (0, 0))
-    for passaro in passaros:
-        passaro.desenhar(tela)
-    for cano in canos:
-        cano.desenhar(tela)
-
-    texto = FONTE_PONTOS.render(f"Pontuação: {pontos}", 1, (255, 255, 255))
-    tela.blit(texto, (TELA_LARGURA - 10 - texto.get_width(), 10))
-    chao.desenhar(tela)
-    pygame.display.update()
 
 def retornaSom(som):
     pygame.init()
