@@ -2,18 +2,8 @@ from loader.loadRun import *
 from aviso.avisoGameOver import gameOver
 import time
 
-def desenhar_tela(tela, passaros, canos, chao, pontos):
-    tela.blit(IMAGEM_BACKGROUND, (0, 0))
-
-    for passaro in passaros:
-        passaro.desenhar(tela)
-    for cano in canos:
-        cano.desenhar(tela)
-
-    texto = FONTE_PONTOS.render(f"Pontuação: {pontos}", 1, (255, 255, 255))
-    tela.blit(texto, (TELA_LARGURA - 10 - texto.get_width(), 10))
-    
-    chao.desenhar(tela)
+def desenhar_tela_run(tela, passaros, canos, chao, pontos):
+    desenhar_tela(tela, passaros, canos, chao, pontos)
     pygame.display.update()
     
 def mainRun():
@@ -72,4 +62,4 @@ def mainRun():
                 retornaSom(SONS['morte']).play()
                 gameOver()
 
-        desenhar_tela(tela, passaros, canos, chao, pontos)
+        desenhar_tela_run(tela, passaros, canos, chao, pontos)
