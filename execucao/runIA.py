@@ -1,12 +1,12 @@
 from loader.loadRun import *
 import neat
 
-ai_jogando = True
+ia_jogando = True
 geracao = 0
 
 def desenhar_tela_ia(tela, passaros, canos, chao, pontos):
     desenhar_tela(tela, passaros, canos, chao, pontos)
-    if ai_jogando:
+    if ia_jogando:
         texto = FONTE_PONTOS.render(f"Geração: {geracao}", 1, (255, 255, 255))
         tela.blit(texto, (10, 10))
 
@@ -16,7 +16,7 @@ def mainRunIa(genomas, config):
     global geracao
     geracao += 1
 
-    if ai_jogando:
+    if ia_jogando:
         redes = []
         lista_genomas = []
         passaros = []
@@ -43,7 +43,7 @@ def mainRunIa(genomas, config):
                 rodando = False
                 pygame.quit()
                 quit()
-            if not ai_jogando:
+            if not ia_jogando:
                 if evento.type == pygame.KEYDOWN:
                     if evento.key == pygame.K_SPACE:
                         for passaro in passaros:
@@ -76,7 +76,7 @@ def mainRunIa(genomas, config):
             for i, passaro in enumerate(passaros):
                 if cano.colidir(passaro):
                     passaros.pop(i)
-                    if ai_jogando:
+                    if ia_jogando:
                         lista_genomas[i].fitness -= 1
                         lista_genomas.pop(i)
                         redes.pop(i)
@@ -98,7 +98,7 @@ def mainRunIa(genomas, config):
         for i, passaro in enumerate(passaros):
             if (passaro.y + passaro.imagem.get_height()) > chao.y or passaro.y < 0:
                 passaros.pop(i)
-                if ai_jogando:
+                if ia_jogando:
                     lista_genomas.pop(i)
                     redes.pop(i)
 
@@ -115,7 +115,7 @@ def rodar(caminho_config):
     populacao.add_reporter(neat.StdOutReporter(True))
     populacao.add_reporter(neat.StatisticsReporter())
 
-    if ai_jogando:
+    if ia_jogando:
         populacao.run(mainRunIa, 50)
     else:
         mainRunIa(None, None)

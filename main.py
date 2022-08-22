@@ -17,7 +17,7 @@ if __name__ == '__main__':
     while LOOP:
         FPS.tick(60)
         LOGO_FLAPPY.clique(TELA)
-        LOGO.clique(TELA)
+        LOGO.clique(TELA) 
 
         if RUN_IA.clique(TELA): 
             avisoRunIA()
