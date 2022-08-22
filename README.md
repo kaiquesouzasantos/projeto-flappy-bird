@@ -1,6 +1,6 @@
-# PYTHON-FLAPPY-BIRD
+<h1 align=center>PYTHON-FLAPPY-BIRD</h1>
 
-## SOBRE
+### SOBRE
 
 - Projeto desenvolvido com Python, utilizando Inteligencia Artificial na configuração NEAT, com o objetivo de que a conexão neural seja capaz de identificar os padrões contidos no volume de informações fornecidas. 
 - Na configuração JOGAR, o usuário pode literalmente jogar, seguindo um padrão de instruções. A interface conta com sons e telas interativas.
@@ -11,15 +11,13 @@
 
 #
 
-## TECNOLOGIAS
+### TECNOLOGIAS
 - [Python](https://www.python.org)
 - [Pygame](https://www.pygame.org)
 - [NEAT](https://neat-python.readthedocs.io)
 
 #
-
-
-## REQUERIMENTOS
+### REQUERIMENTOS
 
 ```
 python requeriments.py
@@ -32,8 +30,7 @@ pip install pygame
 ```
 
 #
-
-## CONTRIBUIÇÃO
+### CONTRIBUIÇÃO
 
 ```
 $ git clone https://github.com/kaiquesouzasantos/python-flappy-bird.git 
