@@ -1,5 +1,11 @@
 <h1 align=center>PYTHON-FLAPPY-BIRD</h1>
 
+
+<p align="center">
+  <img src="imgs/logo_flappy.png" width="500">
+</p>
+
+#
 ### SOBRE
 
 - Projeto desenvolvido com Python, utilizando Inteligencia Artificial na configuração NEAT, com o objetivo de que a conexão neural seja capaz de identificar os padrões contidos no volume de informações fornecidas. 
