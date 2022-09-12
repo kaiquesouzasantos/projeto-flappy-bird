@@ -13,7 +13,7 @@
 - Na configuração IA, a Inteligencia Artificial produz 100 objetos do tipo Passaro, sendo eles testados e estimulados pela conexão neural. Sendo distinguidos por genomas e evolução de gerações.
 - A conexão neural cria estimulos e genomas, a partir de dados processados pelo conjunto individual de informações, fornecido por cada objeto do tipo Passaro. 
 - Cada Passaro fornece 3 informações: altura(y), distancia em relação ao cano superior(x1), distancia em relação ao cano inferior(x2).
-- Cada geração é composta pelo 100 reproduções dos genomas que obtiveram maior pontuação na geração anterior.
+- Cada geração é composta pelo 100 reproduções dos dois passaros que obtiveram maior pontuação na geração anterior.
 
 #
 
