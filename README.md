@@ -23,6 +23,13 @@
 - [NEAT](https://neat-python.readthedocs.io)
 
 #
+### EXECUCAO
+
+```
+python main.py
+```
+
+#
 ### REQUERIMENTOS
 
 ```
