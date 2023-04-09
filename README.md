@@ -1,4 +1,4 @@
-<h1 align=center>PYTHON-FLAPPY-BIRD</h1>
+<h1 align=center>PROJETO-FLAPPY-BIRD</h1>
 
 
 <p align="center">
@@ -46,5 +46,5 @@ pip install pygame
 ### CONTRIBUIÇÃO
 
 ```
-$ git clone https://github.com/kaiquesouzasantos/python-flappy-bird.git 
+$ git clone https://github.com/kaiquesouzasantos/projeto-flappy-bird.git 
 ```
