@@ -6,7 +6,7 @@
 </p>
 
 #
-### SOBRE
+### 📚 SOBRE
 
 - Projeto desenvolvido com Python, utilizando Inteligencia Artificial na configuração NEAT, com o objetivo de que a conexão neural seja capaz de identificar os padrões contidos no volume de informações fornecidas e vencer o jogo. 
 - Na configuração JOGAR, o usuário pode literalmente jogar, seguindo um padrão de instruções. A interface conta com sons e telas interativas.
@@ -16,21 +16,20 @@
 - Cada geração é composta pelo 100 reproduções dos dois passaros que obtiveram maior pontuação na geração anterior.
 
 #
-
-### TECNOLOGIAS
+### 💻 TECNOLOGIAS
 - [Python](https://www.python.org)
 - [Pygame](https://www.pygame.org)
 - [NEAT](https://neat-python.readthedocs.io)
 
 #
-### EXECUCAO
+### 👁️ EXECUCAO
 
 ```
 python main.py
 ```
 
 #
-### REQUERIMENTOS
+### 📋 REQUERIMENTOS
 
 ```
 python requeriments.py
@@ -43,7 +42,7 @@ pip install pygame
 ```
 
 #
-### CONTRIBUIÇÃO
+### 🔗 CONTRIBUIÇÃO
 
 ```
 $ git clone https://github.com/kaiquesouzasantos/projeto-flappy-bird.git 
